@@ -24,6 +24,7 @@ body, html {
   background: var(--navy-darker);
   width: 100%;
   height: 100%;
+  line-height: 1.6em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,10 +34,6 @@ body, html {
 header {
   display: flex;
   align-items: center;
-}
-
-button {
-  margin-left: auto;
 }
 
 main {
@@ -49,11 +46,25 @@ p {
 }
 
 #hurry {
+  font-weight: bold;
+  margin-left: auto;
   background: var(--berry-blue);
+  padding: 1em;
+  border-radius: 3em;
+  cursor: pointer;
 }
 
 #hurry:hover {
+  background: var(--softblue-light);
+}
 
+#hurry a {
+  color: var(--navy-darker);
+}
+
+#tldr {
+  display: flex;
+  justify-content: space-around;
 }
 
 a {
