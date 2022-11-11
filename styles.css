@@ -1,5 +1,4 @@
 :root {
-  --white: #FFFFFF;
   --navy-dark: #002232;
   --navy-darker: #00151f;
   --softblue-light: #b6f0ff;
@@ -16,6 +15,7 @@
 }
 
 body, html {
+  scroll-behavior: smooth;
   color: var(--softblue-lighter);
   background: var(--navy-darker);
   width: 100%;
@@ -25,23 +25,55 @@ body, html {
   align-items: center;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 a {
   color: var(--berry-blue);
   text-decoration: underline;
 }
 
+p {
+  margin: .5em 0;
+}
+
 #page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   min-height: 100vh;
   width: 100%;
 }
 
 #content-wrap {
-  padding-bottom: 2.5rem;
+  padding-bottom: 20vh;
+  max-width: 90%;
 }
 
-#footer {
+#tldr {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 1.5em auto;
+  width: 90%;
+}
+
+.tldr-dicotomy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+footer {
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -49,5 +81,6 @@ a {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 5rem;
+  min-height: 20vh;
+  padding: 0 1em;
 }
