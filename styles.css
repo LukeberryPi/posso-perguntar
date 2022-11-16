@@ -33,14 +33,23 @@ header {
   align-items: center;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
 @media only screen and (min-width: 768px) {
   header {
+    justify-content: space-between;
     flex-direction: row;
   }
 }
 
 article section {
   margin: 2em 0;
+}
+
+button {
+  border: none;
 }
 
 a {
@@ -85,10 +94,9 @@ p {
 }
 
 #hurry {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  margin-top: 1.5em;
   background: var(--softblue-lighter);
   padding: 1em 2em;
   border-radius: 32px;
@@ -109,9 +117,9 @@ p {
 }
 
 #content-wrap {
-  padding-bottom: 20vh;
+  padding-bottom: 10em;
   width: min(85%, 700px);
-  margin: 1em 0;
+  margin: 2em 0;
 }
 
 #og:hover {
@@ -120,7 +128,6 @@ p {
 
 footer {
   display: flex;
-  font-size: 14px;
   flex-direction: column;
   text-align: center;
   justify-content: center;
@@ -128,7 +135,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  min-height: 10em;
+  height: 10em;
   padding: 0 1em;
 }
 
