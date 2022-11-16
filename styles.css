@@ -2,7 +2,7 @@
   --navy-dark: #002232;
   --navy-darker: #00151f;
   --softblue-light: #b6f0ff;
-  --softblue-lighter: #c6f4ff;
+  --softblue-lighter: #e5f9ff;
   --berry-blue: #79CBE3;
   --link-light: #941352;
 }
@@ -16,6 +16,8 @@
 
 body, html {
   scroll-behavior: smooth;
+  scroll-padding-top: 2em;
+  line-height: 1.4;
   color: var(--softblue-lighter);
   background: var(--navy-darker);
   width: 100%;
@@ -28,17 +30,73 @@ body, html {
 header {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+  }
+}
+
+article section {
+  margin: 2em 0;
 }
 
 a {
   color: var(--berry-blue);
+  text-decoration: none;
+}
+
+a:hover {
   text-decoration: underline;
 }
 
+ul {
+  margin: 1.2em 0;
+  list-style-type: none;
+}
+
+ul li {
+  margin: 1em 0;
+}
+
+ul li a {
+  color: var(--softblue-lighter);
+}
+
+ul li a:hover {
+  color: var(--berry-blue);
+}
+
+ul li::before {
+  transition: 200ms linear all;
+  display: inline-block;
+  content: "↗";
+}
+
+ul li:hover::before {
+  color: var(--berry-blue);
+  transform: rotate(135deg);
+}
+
 p {
-  margin: .5em 0;
+  margin: .8em 0;
+}
+
+#hurry {
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1.5em;
+  background: var(--softblue-lighter);
+  padding: 1em 2em;
+  border-radius: 32px;
+  transition: 200ms linear all;
+}
+
+#hurry:hover {
+  background: var(--berry-blue);
 }
 
 #page-container {
@@ -46,28 +104,18 @@ p {
   align-items: center;
   justify-content: center;
   position: relative;
-  min-height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
 #content-wrap {
   padding-bottom: 20vh;
-  max-width: 90%;
+  width: min(85%, 700px);
+  margin: 1em 0;
 }
 
-#tldr {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin: 1.5em auto;
-  width: 90%;
-}
-
-.tldr-dicotomy {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+#og:hover {
+  text-decoration: line-through;
 }
 
 footer {
@@ -76,11 +124,14 @@ footer {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  align-items: center;
   background: var(--navy-dark);
   position: absolute;
   bottom: 0;
   width: 100%;
-  min-height: 20vh;
+  min-height: 10em;
   padding: 0 1em;
+}
+
+footer p {
+  margin: .5em 0;
 }
