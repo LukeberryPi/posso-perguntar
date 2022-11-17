@@ -1,20 +1,20 @@
 :root {
   --navy-dark: #002232;
   --navy-darker: #00151f;
-  --softblue-light: #b6f0ff;
+  --softblue-light: #c3d4db;
   --softblue-lighter: #e5f9ff;
-  --berry-blue: #79CBE3;
-  --link-light: #941352;
+  --berry-blue: #79cbe3;
 }
 
 * {
-  font-family: 'Fira Code', sans-serif;
+  font-family: "Fira Code", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body, html {
+body,
+html {
   scroll-behavior: smooth;
   scroll-padding-top: 2em;
   line-height: 1.4;
@@ -35,7 +35,7 @@ header {
 
 h1 {
   font-size: 2.5rem;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -75,27 +75,27 @@ ul li {
   margin: 1em 0;
 }
 
-.q-list li a {
+.question-list li a {
   color: var(--softblue-lighter);
 }
 
-.q-list li a:hover {
+.question-list li a:hover {
   color: var(--berry-blue);
 }
 
-.q-list li::before {
+.question-list li::before {
   transition: 200ms linear all;
   display: inline-block;
   content: "↗";
 }
 
-.q-list li:hover::before {
+.question-list li:hover::before {
   color: var(--berry-blue);
   transform: rotate(135deg);
 }
 
 p {
-  margin: .8em 0;
+  margin: 0.8em 0;
 }
 
 #hurry {
@@ -103,13 +103,13 @@ p {
   font-weight: bold;
   cursor: pointer;
   background: var(--softblue-lighter);
-  padding: 1em 2em;
+  padding: 1em 1.5em;
   border-radius: 32px;
   transition: 100ms linear all;
 }
 
 #hurry:hover {
-  outline: solid var(--softblue-lighter) .2em;
+ background: var(--softblue-light);
 }
 
 #page-container {
@@ -123,7 +123,7 @@ p {
 
 #content-wrap {
   padding-bottom: 10em;
-  width: min(85%, 700px);
+  width: min(85%, 680px);
   margin: 2em 0;
 }
 
@@ -134,6 +134,7 @@ p {
 footer {
   display: flex;
   flex-direction: column;
+  font-size: .8rem;
   text-align: center;
   justify-content: center;
   background: var(--navy-dark);
@@ -145,30 +146,24 @@ footer {
 }
 
 footer p {
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 #tldr {
-  margin: 2em 0 0;
+  margin: 2em 0;
 }
 
 #tldr > div {
-	display: flex;
-  margin-bottom: 1.2em;
+  display: flex;
 }
 
 #tldr > div > .twitter-tweet {
-	max-width: 100%;
+  max-width: 100%;
   margin-inline: auto;
 }
 
 .tldr-dicotomy {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   text-align: center;
-}
-
-.do-dont-title{
-  margin: 1em 0;
 }
