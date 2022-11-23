@@ -117,7 +117,7 @@ ul li {
 }
 
 #tldr {
-  margin: 2em 0;
+  margin: 2em 0 1em;
 }
 
 #tldr > div {
@@ -133,9 +133,6 @@ ul li {
   display: flex;
   flex-direction: column;
   text-align: center;
-}
-.tldr-dicotomy:last-child {
-  margin-bottom: -2em;
 }
 
 #og:hover {
@@ -161,6 +158,7 @@ footer p {
 }
 
 @media only screen and (min-width: 768px) {
+  
   header {
     justify-content: space-between;
     flex-direction: row;
@@ -170,7 +168,4 @@ footer p {
     margin-bottom: 0;
   }
 
-  #tldr {
-    margin-bottom: 4em;
-  }
 }
