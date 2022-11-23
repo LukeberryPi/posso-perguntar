@@ -27,34 +27,29 @@ html {
   align-items: center;
 }
 
+#page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#content-wrap {
+  padding-bottom: 10em;
+  width: min(85%, 680px);
+  margin: 2em 0;
+}
+
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5em;
-}
-
-@media only screen and (min-width: 768px) {
-  header {
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  h1 {
-    margin-bottom: 0;
-  }
-}
-
-article section {
-  margin: 2em 0;
-}
-
-button {
-  border: none;
+p {
+  margin: 0.8em 0;
 }
 
 a {
@@ -64,6 +59,20 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+
+article section {
+  margin: 2em 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }
 
 ul {
@@ -94,14 +103,9 @@ ul li {
   transform: rotate(135deg);
 }
 
-p {
-  margin: 0.8em 0;
-}
-
 #hurry {
   font-size: 16px;
   font-weight: bold;
-  cursor: pointer;
   background: var(--softblue-lighter);
   padding: 1em 1.5em;
   border-radius: 32px;
@@ -112,19 +116,26 @@ p {
  background: var(--softblue-light);
 }
 
-#page-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 100%;
-  width: 100%;
+#tldr {
+  margin: 2em 0;
 }
 
-#content-wrap {
-  padding-bottom: 10em;
-  width: min(85%, 680px);
-  margin: 2em 0;
+#tldr > div {
+  display: flex;
+}
+
+#tldr > div > .twitter-tweet {
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+.tldr-dicotomy {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.tldr-dicotomy:last-child {
+  margin-bottom: -2em;
 }
 
 #og:hover {
@@ -149,21 +160,17 @@ footer p {
   margin: 0.5em 0;
 }
 
-#tldr {
-  margin: 2em 0;
-}
+@media only screen and (min-width: 768px) {
+  header {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 
-#tldr > div {
-  display: flex;
-}
+  h1 {
+    margin-bottom: 0;
+  }
 
-#tldr > div > .twitter-tweet {
-  max-width: 100%;
-  margin-inline: auto;
-}
-
-.tldr-dicotomy {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  #tldr {
+    margin-bottom: 4em;
+  }
 }
