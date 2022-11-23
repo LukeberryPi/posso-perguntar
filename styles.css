@@ -109,7 +109,8 @@ ul li {
 }
 
 #hurry {
-  font-size: 16px;
+  color: var(--navy-darker);
+  font-size: 1em;
   font-weight: bold;
   background: var(--softblue-lighter);
   padding: 1em 1.5em;
