@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Fira Code";
+  src: url(fonts/FiraCode-VariableFont_wght.ttf);
+}
+
 :root {
   --navy-dark: #002232;
   --navy-darker: #00151f;
