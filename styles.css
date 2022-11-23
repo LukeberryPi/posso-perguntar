@@ -168,4 +168,8 @@ footer p {
     margin-bottom: 0;
   }
 
+  footer {
+    font-size: .9em;
+  }
+
 }
