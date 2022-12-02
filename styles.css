@@ -90,14 +90,11 @@ ul li {
 }
 
 .question-list li a {
-  color: var(--softblue-lighter);
-}
-
-.question-list li a:hover {
   color: var(--berry-blue);
 }
 
 .question-list li::before {
+  color: var(--berry-blue);
   transition: 200ms linear all;
   display: inline-block;
   content: "↗";
