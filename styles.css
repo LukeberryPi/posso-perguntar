@@ -90,9 +90,11 @@ ul li {
 }
 
 img {
+  object-fit: contain;
   margin-top: 1em;
-  border-radius: 30px;
+  border-radius: 10px;
   cursor: pointer;
+  width: 100%;
 }
 
 .question-list li a {
@@ -129,7 +131,7 @@ img {
 }
 
 #tldr {
-  margin: 2em;
+  margin: 2em 0;
 }
 
 .tldr-dicotomy {
