@@ -123,16 +123,7 @@ ul li {
 }
 
 #tldr {
-  margin: 2em 0 1em;
-}
-
-#tldr > div {
-  display: flex;
-}
-
-#tldr > div > .twitter-tweet {
-  max-width: 100%;
-  margin-inline: auto;
+  margin: 2em;
 }
 
 .tldr-dicotomy {
