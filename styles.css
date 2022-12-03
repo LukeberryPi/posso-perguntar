@@ -89,6 +89,12 @@ ul li {
   margin: 1em 0;
 }
 
+img {
+  margin-top: 1em;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
 .question-list li a {
   color: var(--softblue-lighter);
 }
@@ -130,6 +136,7 @@ ul li {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 #og:hover {
