@@ -53,7 +53,7 @@ header {
   align-items: center;
 }
 
-p {
+article p {
   margin: 0.8em 0;
 }
 
@@ -116,11 +116,7 @@ ul li {
 }
 
 #hurry:hover {
- background: var(--softblue-light);
-}
-
-#tldr {
-  margin: 2em 0;
+  background: var(--softblue-light);
 }
 
 .tldr-dicotomy {
@@ -128,23 +124,31 @@ ul li {
   flex-direction: column;
 }
 
+.tldr-dicotomy h3 {
+  text-align: center;
+}
+
 .tweet {
-  font-size: 20px;
-	cursor: pointer;
-	background: #002232;
+  margin-inline: auto;
+  background: #002232;
 	border-radius: 32px;
-	width: min(80%, 500px);
-	position: relative;
+	cursor: pointer;
+  font-size: 18px;
+  margin-block: 1em;
+  padding: 1em;
+	width: min(80%, 800px);
 }
 
 .top-row {
-	display: flex;
 	align-items: center;
+	display: flex;
+  margin-bottom: 1em;
 	width: 100%;
 }
 
 .pfp {
 	border-radius: 50%;
+  margin-right: 1em;
 	width: 50px;
 	height: 50px;
 }
@@ -158,13 +162,13 @@ ul li {
 	width: 40px;
 }
 
-.link-spanner {
+/* .link-spanner {
   position: absolute; 
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-}
+} */
 
 #og:hover {
   text-decoration: line-through;
@@ -189,7 +193,6 @@ footer p {
 }
 
 @media only screen and (min-width: 768px) {
-  
   header {
     justify-content: space-between;
     flex-direction: row;
@@ -201,6 +204,10 @@ footer p {
 
   footer {
     font-size: .9em;
+  }
+
+  .tweet {
+    font-size: 22px;
   }
 
 }
