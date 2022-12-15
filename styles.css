@@ -167,6 +167,10 @@ ul li {
 	width: 40px;
 }
 
+.link-hidden {
+  color: var(--navy-dark);
+}
+
 .link-spanner {
   position: absolute; 
   width: 100%;
