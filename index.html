@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
   <title>Posso Perguntar?</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="pergunta, aprender, programação, desenvolvimento, software, site, estudante, iniciante">
-  <meta name="description" content="Um site informativo sobre como fazer perguntas em público e acelerar seu aprendizado. Apresentamos uma forma mais eficiente de compartilhar suas dúvidas com o mundo.">
+  <meta name="keywords"
+    content="pergunta, aprender, programação, desenvolvimento, software, site, estudante, iniciante">
+  <meta name="description"
+    content="Um site informativo sobre como fazer perguntas em público e acelerar seu aprendizado. Apresentamos uma forma mais eficiente de compartilhar suas dúvidas com o mundo.">
+  <meta property="og:url" content="https://www.possoperguntar.com.br/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Posso Perguntar?">
-  <meta property="og:description" content="Um site informativo sobre como fazer perguntas em público e acelerar seu aprendizado. Apresentamos uma forma mais eficiente de compartilhar suas dúvidas com o mundo.">
-  <meta property="og:image" content="https://possoperguntar.com.br/favicon.ico">  
-  <meta property="og:image:secure" content="https://possoperguntar.com.br/favicon.ico">
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:url" content="https://possoperguntar.com.br">
-  <meta property="og:site_name" content="possoperguntar.com.br">
+  <meta property="og:description"
+    content="Um site informativo sobre como fazer perguntas em público e acelerar seu aprendizado. Apresentamos uma forma mais eficiente de compartilhar suas dúvidas com o mundo.">
+  <meta property="og:image" content="https://possoperguntar.com.br/assets/siteIcon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="possoperguntar.com.br">
+  <meta property="twitter:url" content="https://www.possoperguntar.com.br/">
+  <meta name="twitter:title" content="Posso Perguntar?">
+  <meta name="twitter:description"
+    content="Um site informativo sobre como fazer perguntas em público e acelerar seu aprendizado. Apresentamos uma forma mais eficiente de compartilhar suas dúvidas com o mundo.">
+  <meta name="twitter:image" content="https://possoperguntar.com.br/assets/siteIcon.png">
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" >
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 </head>
+
 <body>
   <div id="page-container">
     <main id="content-wrap">
@@ -100,38 +109,70 @@
             </li>
           </ul>
         </section>
-        <p>Confere esse exemplo:</p>
+        <p>Confira esses exemplos. Clique neles para acessar o tweet original:</p>
       </article>
       <div id="tldr">
         <div class="tldr-dicotomy">
           <h3>Não Pergunte Assim ❌</h3>
-          <blockquote class="twitter-tweet" data-lang="pt" data-theme="dark">
-            <p lang="pt" dir="ltr">Algum dev javascript por aí para me dar uma ajuda?</p>&mdash; Lukeberry Pi
-            (@LukeberryPi) <a href="https://twitter.com/LukeberryPi/status/1592654561357238273?ref_src=twsrc%5Etfw">15
-              de novembro de 2022</a>
-          </blockquote>
+          <div class="tweet">
+            <div class="top-row">
+              <img width="50" height="50" class="pfp" alt="LukeberryPi twitter profile picture" src="https://pbs.twimg.com/profile_images/1599246671522701314/eOE4-BOL_400x400.jpg">
+              <div class="at">
+                <p>@LukeberryPi</p>
+              </div>
+              <img width="40" height="40" class="twitter-logo" alt="Twitter logo"
+                src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png">
+            </div>
+            <p>
+              Algum dev javascript por aí para me dar uma ajuda?
+            </p>
+            <a class="link-hidden" target="_blank" href="https://twitter.com/LukeberryPi/status/1592654561357238273?s=20&t=sBS4oZ7HvzgM0oxb-mYHPA">
+              pergunta ineficiente<span class="link-spanner"></span>
+            </a>
+          </div>
         </div>
         <div class="tldr-dicotomy">
           <h3>Pergunte Assim ✅</h3>
-          <blockquote class="twitter-tweet" data-lang="pt" data-theme="dark">
-            <p lang="pt" dir="ltr">em react, como evitar que um componente re-renderize ao usar uma função onClick? meu código tá
-              assim:<br><br>&lt;Button onClick={handleClick( )} /&gt;<br><br>queria que chamasse a função apenas quando eu clico
-              no botão, mas ele tá renderizando em outros eventos do navegador<br><br>cc <a
-                href="https://twitter.com/sseraphini?ref_src=twsrc%5Etfw">@sseraphini</a></p>&mdash; Lukeberry Pi (@LukeberryPi)
-            <a href="https://twitter.com/LukeberryPi/status/1595172561721167906?ref_src=twsrc%5Etfw">22 de novembro de 2022</a>
-          </blockquote>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <div class="tweet">
+            <div class="top-row">
+              <img width="50" height="50" class="pfp" alt="LukeberryPi twitter profile picture" src="https://pbs.twimg.com/profile_images/1599246671522701314/eOE4-BOL_400x400.jpg">
+              <div class="at">
+                <p>@LukeberryPi</p>
+              </div>
+              <img width="40" height="40" class="twitter-logo" alt="Twitter logo"
+                src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png">
+            </div>
+            <p>
+              em react, como evitar que um componente re-renderize ao usar uma função onClick? meu código tá assim: <br><br>
+              &lt;Button onClick={handleClick()} /&gt; <br><br>
+              queria que chamasse a função apenas quando eu clico no botão, mas ele tá renderizando em outros eventos do
+              navegador<br><br>
+              cc
+              @sseraphini
+            </p>
+            <a class="link-hidden" target="_blank" href="https://twitter.com/LukeberryPi/status/1595172561721167906?s=20&t=UB_nYQu9YQpYYpbSpJ004A">
+              pergunta eficiente<span class="link-spanner"></span>
+            </a>
+          </div>
         </div>
       </div>
-      <p>Os tweets acima foram feitos por mim, para ilustrar o ponto. Se você entrar em ambos, vai notar a diferença das respostas!</p>
-      <p>No segundo, mais elaborado, teve discussão até sobre otimização prematura, hooks do react, callback, etc... As pessoas estão engajadas, prontas para ajudar e debater.</p>
-      <p><a target="_blank" href="https://pt.stackoverflow.com/help/how-to-ask">Esse link</a> é excelente se você tem interesse sobre perguntas. É do nosso queridinho <a target="_blank" href="https://pt.stackoverflow.com/">Stack Overflow</a>, o maior fórum de dúvidas de programação do mundo.</p>
+      <article>
+        <p>Os tweets acima foram feitos por mim, para ilustrar o ponto. Se você entrar em ambos, vai notar a diferença das
+          respostas!</p>
+        <p>No segundo, mais elaborado, teve discussão até sobre otimização prematura, hooks do react, callback, etc... As
+          pessoas estão engajadas, prontas para ajudar e debater.</p>
+        <p><a target="_blank" href="https://pt.stackoverflow.com/help/how-to-ask">Esse link</a> é excelente se você tem
+          interesse sobre perguntas. É do nosso queridinho <a target="_blank" href="https://pt.stackoverflow.com/">Stack
+            Overflow</a>, o maior fórum de dúvidas de programação do mundo.</p>
+      </article>
     </main>
     <footer>
       <p>Primo brasileiro do <a id="og" target="_blank" href="https://dontasktoask.com/">dontasktoask.com</a></p>
       <p>Criado por <a id="self" target="_blank" href="https://twitter.com/LukeberryPi">@LukeberryPi</a>, disponível no
-      <a target="_blank" href="https://github.com/LukeberryPi/posso-perguntar">GitHub</a></p>
+        <a target="_blank" href="https://github.com/LukeberryPi/posso-perguntar">GitHub</a>
+      </p>
     </footer>
   </div>
 </body>
+
 </html>
