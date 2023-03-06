@@ -1,7 +1,8 @@
 # [possoperguntar.com.br](https://www.possoperguntar.com.br/)
 
 ### Motivação
-Esse site é o primo brasileiro do [Don't Ask to Ask](https://dontasktoask.com/). Eu o criei com o intuito de passar a mensagem de
+
+Esse site é o primo brasileiro do [Don't Ask to Ask](https://dontasktoask.com/). Foi criado com o intuito de passar a mensagem de
 uma maneira menos rude do que a original, mantendo a objetividade.
 
 Trata sobre a importância de tirar suas dúvidas fornecendo contexto sobre seu objetivo e o que você já tentou, possibilitando que as pessoas te ajudem mais facilmente,
