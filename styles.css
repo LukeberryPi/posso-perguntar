@@ -1,6 +1,6 @@
 @font-face {
   font-family: "DM Sans";
-  src: url(assets/dm-sans.ttf);
+  src: url(public/dm-sans.ttf);
 }
 
 :root {
