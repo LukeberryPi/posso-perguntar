@@ -1,6 +1,7 @@
 @font-face {
   font-family: "DM Sans";
   src: url(assets/dm-sans.ttf);
+  font-display: swap;
 }
 
 :root {
@@ -8,7 +9,7 @@
   --navy-darker: #00151f;
   --softblue-light: #c3d4db;
   --softblue-lighter: #e5f9ff;
-  --berry-blue: #79cbe3;
+  --berry-blue: #8ce5ff;
 }
 
 * {
@@ -64,8 +65,9 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+a:not(#hurry) {
+  text-decoration: underline 2px;
+  text-underline-offset: 3px;
 }
 
 h1 {
@@ -169,10 +171,6 @@ ul li {
   width: 40px;
 }
 
-.link-hidden {
-  color: var(--navy-dark);
-}
-
 .link-spanner {
   position: absolute;
   width: 100%;
@@ -200,6 +198,20 @@ footer {
 footer p,
 footer a {
   font-size: 1rem;
+}
+
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+		clip-path: inset(50%) !important;
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
 }
 
 @media only screen and (min-width: 727px) {
