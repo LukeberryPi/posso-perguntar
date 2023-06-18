@@ -61,11 +61,11 @@ article p {
 
 a {
   font-size: 1.2rem;
-  color: var(--berry-blue);
   text-decoration: none;
+  color: var(--berry-blue);
 }
 
-a:not(#hurry) {
+a:not(#hurry, .tweet) {
   text-decoration: underline 2px;
   text-underline-offset: 3px;
 }
@@ -92,10 +92,6 @@ ul li {
   width: fit-content;
   list-style-type: none;
   margin: 1em 0;
-}
-
-.question-list li a {
-  color: var(--berry-blue);
 }
 
 .question-list li::before {
@@ -140,6 +136,7 @@ ul li {
 .tweet {
   position: relative;
   margin-inline: auto;
+  color: var(--softblue-lighter);
   background: #002232;
   border-radius: 32px;
   cursor: pointer;
@@ -160,7 +157,6 @@ ul li {
   border-radius: 50%;
   margin-right: 1em;
   width: 50px;
-  height: 50px;
 }
 
 .at {
@@ -199,20 +195,6 @@ footer {
 footer p,
 footer a {
   font-size: 1rem;
-}
-
-.sr-only {
-	border: 0;
-	clip: rect(1px, 1px, 1px, 1px);
-	-webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-	white-space: nowrap;
 }
 
 @media only screen and (min-width: 727px) {
